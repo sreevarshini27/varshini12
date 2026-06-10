@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .search-container {
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin-left: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #0078D7;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <h1>Search</h1>
+        <input type="text" id="searchBox" placeholder="Type your search here...">
+        <button onclick="performSearch()">Search</button>
+    </div>
+
+    <script>
+        function performSearch() {
+            const query = document.getElementById("searchBox").value;
+            alert("You searched for: " + query);
+        }
+    </script>
+
+</body>
+</html>
